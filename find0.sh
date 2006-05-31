@@ -2,9 +2,9 @@
 #
 # find - shell alias for find ... -print0
 #
-# @(#) $Revision$
-# @(#) $Id$
-# @(#) $Source$
+# @(#) $Revision: 1.1 $
+# @(#) $Id: find0.sh,v 1.1 2006/05/22 18:12:27 chongo Exp chongo $
+# @(#) $Source: /usr/local/src/cmd/xargs0/RCS/find0.sh,v $
 #
 # Copyright (c) 2006 by Landon Curt Noll.  All Rights Reserved.
 #
@@ -30,4 +30,4 @@
 #
 # Share and enjoy! :-)
 
-find $@ -print0
+find "$@" -print0
