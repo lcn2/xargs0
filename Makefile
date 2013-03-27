@@ -3,9 +3,9 @@
 #
 # xargs0 - shell alias for xargs -0
 #
-# @(#) $Revision$
-# @(#) $Id$
-# @(#) $Source$
+# @(#) $Revision: 1.1 $
+# @(#) $Id: Makefile,v 1.1 2006/05/22 18:12:27 chongo Exp root $
+# @(#) $Source: /usr/local/src/bin/xargs0/RCS/Makefile,v $
 #
 # Copyright (c) 2006 by Landon Curt Noll.  All Rights Reserved.
 #
@@ -37,7 +37,7 @@ RM= rm
 LN= ln
 CHMOD= chmod
 
-TOPNAME= cmd
+TOPNAME= bin
 INSTALL= install
 
 DESTDIR= /usr/local/bin
