@@ -3,8 +3,8 @@
 #
 # xargs0 - shell alias for xargs -0
 #
-# @(#) $Revision: 1.1 $
-# @(#) $Id: Makefile,v 1.1 2006/05/22 18:12:27 chongo Exp root $
+# @(#) $Revision: 1.2 $
+# @(#) $Id: Makefile,v 1.2 2013/03/27 04:31:17 root Exp root $
 # @(#) $Source: /usr/local/src/bin/xargs0/RCS/Makefile,v $
 #
 # Copyright (c) 2006 by Landon Curt Noll.  All Rights Reserved.
@@ -34,7 +34,7 @@
 
 SHELL= /bin/sh
 RM= rm
-LN= ln
+CP= cp
 CHMOD= chmod
 
 TOPNAME= bin
@@ -48,12 +48,12 @@ all: ${TARGETS}
 
 xargs0: xargs0.sh
 	${RM} -f $@
-	${LN} $? $@
+	${CP} -f $? $@
 	${CHMOD} +x $@
 
 find0: find0.sh
 	${RM} -f $@
-	${LN} $? $@
+	${CP} -f $? $@
 	${CHMOD} +x $@
 
 configure:
