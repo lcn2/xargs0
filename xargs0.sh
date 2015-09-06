@@ -2,9 +2,9 @@
 #
 # xargs0 - shell alias for xargs -0
 #
-# @(#) $Revision: 1.1 $
-# @(#) $Id: xargs0.sh,v 1.1 2006/05/22 18:12:27 chongo Exp chongo $
-# @(#) $Source: /usr/local/src/cmd/xargs0/RCS/xargs0.sh,v $
+# @(#) $Revision: 1.2 $
+# @(#) $Id: xargs0.sh,v 1.2 2006/05/31 20:12:50 chongo Exp root $
+# @(#) $Source: /usr/local/src/bin/xargs0/RCS/xargs0.sh,v $
 #
 # Copyright (c) 2006 by Landon Curt Noll.  All Rights Reserved.
 #
@@ -30,4 +30,4 @@
 #
 # Share and enjoy! :-)
 
-xargs -0 "$@"
+xargs -0 --no-run-if-empty "$@"
