@@ -3,8 +3,8 @@
 #
 # xargs0 - shell alias for xargs -0
 #
-# @(#) $Revision: 1.2 $
-# @(#) $Id: Makefile,v 1.2 2013/03/27 04:31:17 root Exp root $
+# @(#) $Revision: 1.3 $
+# @(#) $Id: Makefile,v 1.3 2014/09/22 01:33:09 root Exp $
 # @(#) $Source: /usr/local/src/bin/xargs0/RCS/Makefile,v $
 #
 # Copyright (c) 2006 by Landon Curt Noll.  All Rights Reserved.
