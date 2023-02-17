@@ -1,12 +1,8 @@
-#!/bin/sh -
+#!/usr/bin/env bash
 #
 # xargs0 - shell alias for xargs -0
 #
-# @(#) $Revision: 1.3 $
-# @(#) $Id: xargs0.sh,v 1.3 2015/09/06 13:18:45 root Exp $
-# @(#) $Source: /usr/local/src/bin/xargs0/RCS/xargs0.sh,v $
-#
-# Copyright (c) 2006 by Landon Curt Noll.  All Rights Reserved.
+# Copyright (c) 2006,2023 by Landon Curt Noll.  All Rights Reserved.
 #
 # Permission to use, copy, modify, and distribute this software and
 # its documentation for any purpose and without fee is hereby granted,
@@ -30,4 +26,8 @@
 #
 # Share and enjoy! :-)
 
-xargs -0 --no-run-if-empty "$@"
+if $(xargs --no-run-if-empty echo < /dev/null > /dev/null 2>&1) ; then
+    xargs -0 --no-run-if-empty "$@"
+else
+    xargs -0 "$@"
+fi
