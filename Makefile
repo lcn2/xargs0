@@ -1,13 +1,8 @@
-#!/bin/make
-# @(#)Makefile	1.2 04 May 1995 02:06:57
+#!/usr/bin/env make
 #
 # xargs0 - shell alias for xargs -0
 #
-# @(#) $Revision: 1.3 $
-# @(#) $Id: Makefile,v 1.3 2014/09/22 01:33:09 root Exp $
-# @(#) $Source: /usr/local/src/bin/xargs0/RCS/Makefile,v $
-#
-# Copyright (c) 2006 by Landon Curt Noll.  All Rights Reserved.
+# Copyright (c) 2006,2023 by Landon Curt Noll.  All Rights Reserved.
 #
 # Permission to use, copy, modify, and distribute this software and
 # its documentation for any purpose and without fee is hereby granted,
@@ -32,7 +27,7 @@
 # Share and enjoy! :-)
 
 
-SHELL= /bin/sh
+SHELL= bash
 RM= rm
 CP= cp
 CHMOD= chmod
