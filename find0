@@ -1,12 +1,8 @@
-#!/bin/sh -
+#!/usr/bin/env bash
 #
-# find - shell alias for find ... -print0
+# find - shell "alias" for find ... -print0
 #
-# @(#) $Revision: 1.2 $
-# @(#) $Id: find0.sh,v 1.2 2006/05/31 20:12:50 chongo Exp $
-# @(#) $Source: /usr/local/src/bin/xargs0/RCS/find0.sh,v $
-#
-# Copyright (c) 2006 by Landon Curt Noll.  All Rights Reserved.
+# Copyright (c) 2006,2013-2015,2023,2025 by Landon Curt Noll.  All Rights Reserved.
 #
 # Permission to use, copy, modify, and distribute this software and
 # its documentation for any purpose and without fee is hereby granted,
@@ -26,8 +22,15 @@
 # OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
 # PERFORMANCE OF THIS SOFTWARE.
 #
-# chongo (Landon Curt Noll, http://www.isthe.com/chongo/index.html) /\oo/\
+# chongo (Landon Curt Noll) /\oo/\
 #
-# Share and enjoy! :-)
+# http://www.isthe.com/chongo/index.html
+# https://github.com/lcn2
+#
+# Share and enjoy!  :-)
+
+
+# export VERSION="1.0.0 2025-03-23"
+
 
 find "$@" -print0
