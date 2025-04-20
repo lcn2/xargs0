@@ -10,25 +10,25 @@ sudo make install
 ```
 
 
-# To use
-
-```sh
-find ... -print0 | xargs0 command ...
-```
-
-```sh
-find0 ... | xargs0 command ...
-```
-
-
 # Examples
 
 ```sh
-find0 . -type f -name '*.md' | xargs0 ls -ld
+/usr/local/bin/find0 . -type f -name '*.md' | xargs0 ls -ld
 ```
 
 ```sh
-find /usr/local/src/bin -type f -name '*.[ch]' -print0 | xargs0 wc -l
+find /usr/local/src/bin -type f -name '*.[ch]' -print0 | /usr/local/bin/xargs0 wc -l
+```
+
+
+# To use
+
+```sh
+$ find ... -print0 | /usr/local/bin/xargs0 command ...
+```
+
+```sh
+$ find0 ... | /usr/local/bin/xargs0 command ...
 ```
 
 
